@@ -1,4 +1,4 @@
-{% set version = "1.3.0" %}
+{% set version = "1.3.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sodium_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sodium/sodium_{{ version }}.tar.gz
-  sha256: 881a8d75f05f94366c367d8ca2f27f6cac879e6c54f4b632e4722d7fff62202c
+  sha256: fd811a49fc4927d4f352eb033a6cb26cd223b52282b9004dcc8244c85e3d7231
 
 build:
   merge_build_host: true  # [win]
